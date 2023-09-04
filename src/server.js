@@ -10,6 +10,8 @@ const server = express(); //iniciando o server
 server.use(cors());
 server.use(bodyParser.urlencoded({extended: false}));
 
+server.use('/api', routes);//vai fazer que todo o prefixo das rotas tenha /api
+
 server.listen(process.env.PORT, ()=>{
     console.log(`Servidor rodando em: http://localhost:${process.env.PORT}`)
 })

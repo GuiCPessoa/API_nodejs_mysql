@@ -1,0 +1,1 @@
+const StudService = require('../services/StudService');
